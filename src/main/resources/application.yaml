@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: demo
+  mvc:
+    problemdetails:
+      enabled: true
+
+server:
+  port: ${PORT:8080}
+
+# Supabase credentials are read from the environment by AppConfig.fromEnvironment():
+#   SUPABASE_URL, SUPABASE_ANON_KEY, SUPABASE_LOGGING
+# (kept out of Spring config on purpose, read by AppConfig.)
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
