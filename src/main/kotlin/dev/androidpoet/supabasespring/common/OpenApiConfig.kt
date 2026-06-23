@@ -5,11 +5,6 @@ import io.swagger.v3.oas.models.info.Info
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 
-/**
- * Metadata for the auto-generated OpenAPI document. springdoc scans the
- * controllers and produces the schema at `/v3/api-docs`, served as Swagger UI
- * at `/swagger-ui.html` — no hand-written spec required.
- */
 @Configuration
 class OpenApiConfig {
     @Bean

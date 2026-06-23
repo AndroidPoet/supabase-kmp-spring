@@ -5,11 +5,6 @@ import org.springframework.http.ProblemDetail
 import org.springframework.web.bind.annotation.ExceptionHandler
 import org.springframework.web.bind.annotation.RestControllerAdvice
 
-/**
- * Translates domain exceptions into RFC 7807 Problem Details responses.
- * `ResponseStatusException` (thrown by [unwrap]) is already handled by Spring's
- * defaults.
- */
 @RestControllerAdvice
 class GlobalExceptionHandler {
     @ExceptionHandler(ValidationException::class)

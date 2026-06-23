@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="art/banner.png" alt="supabase-kmp + Spring Boot" width="720">
+</p>
+
 <h1 align="center">supabase-kmp-spring</h1>
 
 <p align="center">
@@ -49,7 +53,6 @@ its outputs are republished as Spring beans, so controllers inject services the
 ordinary Spring way:
 
 ```kotlin
-// di/AppGraph.kt — the compile-time graph
 @DependencyGraph(AppScope::class)
 interface AppGraph {
     val userService: UserService
@@ -71,7 +74,6 @@ interface AppGraph {
 ```
 
 ```kotlin
-// di/MetroConfiguration.kt — the bridge to Spring
 @Configuration
 class MetroConfiguration {
     @Bean fun appConfig() = AppConfig.fromEnvironment()

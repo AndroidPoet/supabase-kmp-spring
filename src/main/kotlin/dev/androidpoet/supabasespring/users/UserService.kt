@@ -9,12 +9,6 @@ import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.runBlocking
 import java.util.UUID
 
-/**
- * User application service. Enforces email uniqueness and "not found"
- * semantics. supabase-kmp is coroutine-first,
- * so suspend repository calls are bridged to Spring's blocking model with
- * [runBlocking] and each [SupabaseResult] is unwrapped via [unwrap].
- */
 @Inject
 @SingleIn(AppScope::class)
 class UserService(

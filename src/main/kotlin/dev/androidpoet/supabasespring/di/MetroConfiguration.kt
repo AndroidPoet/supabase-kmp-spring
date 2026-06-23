@@ -7,12 +7,6 @@ import dev.zacsweers.metro.createGraphFactory
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 
-/**
- * The bridge between Metro and Spring. Spring stays "simple" — it owns the web
- * layer and the bean registry — while Metro owns the actual object graph. We
- * build the [AppGraph] once and republish its outputs as Spring beans so the
- * `@RestController`s can constructor-inject them the usual Spring way.
- */
 @Configuration
 class MetroConfiguration {
     @Bean

@@ -1,12 +1,5 @@
 package dev.androidpoet.supabasespring.config
 
-/**
- * Plain application configuration, read from the environment via
- * [fromEnvironment]. The data layer is Supabase rather than a JDBC database.
- *
- * Defaults are valid-but-local placeholders so the Spring context (and the
- * `contextLoads` test) can start offline; real runs override via env vars.
- */
 data class AppConfig(
     val supabase: SupabaseConfig,
 ) {

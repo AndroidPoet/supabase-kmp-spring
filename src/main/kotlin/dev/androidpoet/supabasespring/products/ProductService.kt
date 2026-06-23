@@ -7,10 +7,6 @@ import dev.zacsweers.metro.Inject
 import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.runBlocking
 
-/**
- * Product application service. Bridges supabase-kmp's suspend/[SupabaseResult]
- * API to Spring's blocking model with [runBlocking] + [unwrap].
- */
 @Inject
 @SingleIn(AppScope::class)
 class ProductService(

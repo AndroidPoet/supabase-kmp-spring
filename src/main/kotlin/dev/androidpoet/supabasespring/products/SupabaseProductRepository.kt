@@ -12,10 +12,6 @@ import io.github.androidpoet.supabase.database.deleteUnit
 import io.github.androidpoet.supabase.database.selectTyped
 import io.github.androidpoet.supabase.database.updateUnitTyped
 
-/**
- * PostgREST-backed [ProductRepository] using the supabase-kmp database client.
- * Same typed-CRUD pattern as the library's todo-crud sample.
- */
 @Inject
 @SingleIn(AppScope::class)
 class SupabaseProductRepository(

@@ -4,7 +4,6 @@ import dev.androidpoet.supabasespring.common.ValidationException
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
-/** A row of the `products` table. */
 @Serializable
 data class Product(
     val id: Long,
@@ -14,7 +13,6 @@ data class Product(
     @SerialName("created_at") val createdAt: String? = null,
 )
 
-/** Insert payload — id/created_at filled by column defaults. */
 @Serializable
 data class NewProduct(
     val name: String,
@@ -22,7 +20,6 @@ data class NewProduct(
     val price: Double,
 )
 
-/** Partial-update payload. */
 @Serializable
 data class ProductPatch(
     val name: String,
@@ -30,7 +27,6 @@ data class ProductPatch(
     val price: Double,
 )
 
-/** Inbound request body (Jackson) for create/update. */
 data class ProductRequest(
     val name: String = "",
     val description: String? = null,

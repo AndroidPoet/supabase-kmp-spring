@@ -16,14 +16,6 @@ import io.github.androidpoet.supabase.client.SupabaseClient
 import io.github.androidpoet.supabase.database.DatabaseClient
 import io.github.androidpoet.supabase.database.createDatabaseClient
 
-/**
- * The Metro dependency graph — the heart of the app's wiring.
- * It exposes the feature services, binds repository
- * interfaces to their Supabase-backed implementations, and provides the
- * supabase-kmp clients as application singletons. The graph is created once
- * (via [createGraphFactory][dev.zacsweers.metro.createGraphFactory]) and its
- * outputs are handed to Spring as beans (see `MetroConfiguration`).
- */
 @DependencyGraph(AppScope::class)
 interface AppGraph {
     val userService: UserService

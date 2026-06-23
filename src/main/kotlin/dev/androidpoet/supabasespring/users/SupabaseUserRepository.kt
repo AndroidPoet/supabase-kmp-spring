@@ -10,10 +10,6 @@ import io.github.androidpoet.supabase.core.result.map
 import io.github.androidpoet.supabase.database.DatabaseClient
 import io.github.androidpoet.supabase.database.selectTyped
 
-/**
- * PostgREST-backed [UserRepository] using the supabase-kmp database client.
- * Metro constructs it (`@Inject`) and binds it to [UserRepository] in `AppGraph`.
- */
 @Inject
 @SingleIn(AppScope::class)
 class SupabaseUserRepository(
