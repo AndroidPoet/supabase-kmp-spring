@@ -1,4 +1,4 @@
-<h1 align="center">supabase-spring-metro</h1>
+<h1 align="center">supabase-kmp-spring</h1>
 
 <p align="center">
   <b>Spring Boot · Metro DI · Supabase</b><br/>
