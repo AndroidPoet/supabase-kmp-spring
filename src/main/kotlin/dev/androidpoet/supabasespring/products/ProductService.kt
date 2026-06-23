@@ -2,13 +2,10 @@ package dev.androidpoet.supabasespring.products
 
 import dev.androidpoet.supabasespring.common.NotFoundException
 import dev.androidpoet.supabasespring.common.unwrap
-import dev.androidpoet.supabasespring.di.AppScope
-import dev.zacsweers.metro.Inject
-import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.runBlocking
+import org.springframework.stereotype.Service
 
-@Inject
-@SingleIn(AppScope::class)
+@Service
 class ProductService(
     private val products: ProductRepository,
 ) {

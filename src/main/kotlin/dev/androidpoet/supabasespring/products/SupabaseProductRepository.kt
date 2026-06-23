@@ -1,8 +1,5 @@
 package dev.androidpoet.supabasespring.products
 
-import dev.androidpoet.supabasespring.di.AppScope
-import dev.zacsweers.metro.Inject
-import dev.zacsweers.metro.SingleIn
 import io.github.androidpoet.supabase.client.defaultJson
 import io.github.androidpoet.supabase.client.deserialize
 import io.github.androidpoet.supabase.core.result.SupabaseResult
@@ -11,9 +8,9 @@ import io.github.androidpoet.supabase.database.DatabaseClient
 import io.github.androidpoet.supabase.database.deleteUnit
 import io.github.androidpoet.supabase.database.selectTyped
 import io.github.androidpoet.supabase.database.updateUnitTyped
+import org.springframework.stereotype.Repository
 
-@Inject
-@SingleIn(AppScope::class)
+@Repository
 class SupabaseProductRepository(
     private val database: DatabaseClient,
 ) : ProductRepository {

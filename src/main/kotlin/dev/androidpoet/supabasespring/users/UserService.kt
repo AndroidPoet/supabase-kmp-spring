@@ -3,14 +3,11 @@ package dev.androidpoet.supabasespring.users
 import dev.androidpoet.supabasespring.common.ConflictException
 import dev.androidpoet.supabasespring.common.NotFoundException
 import dev.androidpoet.supabasespring.common.unwrap
-import dev.androidpoet.supabasespring.di.AppScope
-import dev.zacsweers.metro.Inject
-import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.runBlocking
+import org.springframework.stereotype.Service
 import java.util.UUID
 
-@Inject
-@SingleIn(AppScope::class)
+@Service
 class UserService(
     private val users: UserRepository,
 ) {

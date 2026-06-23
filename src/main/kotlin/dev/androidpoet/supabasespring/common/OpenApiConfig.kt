@@ -11,8 +11,8 @@ class OpenApiConfig {
     fun apiInfo(): OpenAPI =
         OpenAPI().info(
             Info()
-                .title("Supabase + Spring + Metro DI")
-                .description("Users & Products CRUD over supabase-kmp, wired with Metro DI.")
+                .title("Supabase + Spring Boot")
+                .description("Users & Products CRUD over supabase-kmp.")
                 .version("0.0.1"),
         )
 }

@@ -1,17 +1,14 @@
 package dev.androidpoet.supabasespring.users
 
-import dev.androidpoet.supabasespring.di.AppScope
-import dev.zacsweers.metro.Inject
-import dev.zacsweers.metro.SingleIn
 import io.github.androidpoet.supabase.client.defaultJson
 import io.github.androidpoet.supabase.client.deserialize
 import io.github.androidpoet.supabase.core.result.SupabaseResult
 import io.github.androidpoet.supabase.core.result.map
 import io.github.androidpoet.supabase.database.DatabaseClient
 import io.github.androidpoet.supabase.database.selectTyped
+import org.springframework.stereotype.Repository
 
-@Inject
-@SingleIn(AppScope::class)
+@Repository
 class SupabaseUserRepository(
     private val database: DatabaseClient,
 ) : UserRepository {

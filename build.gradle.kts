@@ -4,9 +4,6 @@ plugins {
 	kotlin("plugin.serialization") version "2.3.0"
 	id("org.springframework.boot") version "3.5.15"
 	id("io.spring.dependency-management") version "1.1.7"
-	// Metro DI — compiler-plugin dependency injection, used to build the
-	// application's object graph instead of Spring component scanning.
-	id("dev.zacsweers.metro") version "1.1.1"
 }
 
 group = "dev.androidpoet.supabasespring"
@@ -17,7 +14,7 @@ extra["kotlin.version"] = "2.3.0"
 
 java {
 	toolchain {
-		languageVersion = JavaLanguageVersion.of(21)
+		languageVersion = JavaLanguageVersion.of(17)
 	}
 }
 
